@@ -14,7 +14,7 @@ def test_predict_answer():
     response = client.post("/predict/",
                            json={"text": "I applied for a visa invitation a few days/weeks ago and still haven't received it. What should I do in this situation?"})
     assert response.status_code == 200
-    assert response == '''I applied for a visa invitation a few days/weeks ago and still haven't received it. What should I do in this situation?
+    assert response.json() == '''I applied for a visa invitation a few days/weeks ago and still haven't received it. What should I do in this situation?
 There is nothing to worry about. The invitation is issued by the Ministry of Foreign Affairs of the Russian Federation and takes at least 30 days to be prepared. If you do not receive your invitation 40 days after submitting the application, please contact the Admissions Office at admission@urfu.ru.
 
 How do I extend my visa?
