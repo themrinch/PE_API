@@ -25,5 +25,6 @@ async def root():
 @app.post("/predict/")
 def predict(item: Item):
     """Text Classifier"""
-    classified = classifier(item.text, labels)["labels"][0]
+    classified = classifier(item.text,
+                            labels)["labels"][0]
     return answers[classified]
