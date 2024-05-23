@@ -14,9 +14,9 @@ def test_read_main():
 
 def test_predict_answer():
     response = client.post("/predict/",
-                           json={"text": "I applied for a visa invitation"
-                                 "a few days/weeks ago and still haven't"
-                                 "received it. What should I do in"
+                           json={"text": "I applied for a visa invitation "
+                                 "a few days/weeks ago and still haven't "
+                                 "received it. What should I do in "
                                  "this situation?"})
     assert response.status_code == 200
     assert response.json() == json.load(open('data.json',
