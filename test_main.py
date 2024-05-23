@@ -28,6 +28,7 @@ def test_predict_answer():
     If you do not receive your invitation 40 days
     after submitting the application, please
     contact the Admissions Office at admission@urfu.ru.
+    
     How do I extend my visa?
     Please visit the GUK-109 office
     at least six weeks prior to the
