@@ -7,7 +7,7 @@ client = TestClient(app)
 def test_read_main():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {'model': 'Text Classifier - facebook/bart-large-mnli'}
+    assert response.json() == {'model': 'facebook/bart-large-mnli'}
 
 
 def test_predict_answer():
