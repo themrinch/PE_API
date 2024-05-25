@@ -21,5 +21,6 @@ def test_predict_answer():
     assert response.status_code == 200
     assert response.json() == json.load(open('data.json',
                                              'r',
-                                             encoding='utf-8')
+                                             encoding='utf-8'
+                                            )
                                        )['Visa invitation']
